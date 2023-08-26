@@ -1,1 +1,1 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/dtt5gfflxh0vvjk7?svg=true)](https://ci.appveyor.com/project/VorobevDenis95/ajs-map)
+[![Build status](https://ci.appveyor.com/api/projects/status/gu46y41knbucvwk4?svg=true)](https://ci.appveyor.com/project/VorobevDenis95/ajs-arraybuffer)
