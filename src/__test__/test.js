@@ -37,5 +37,11 @@ test('test attack6', () => {
 
 test('test stoned', () => {
   const math = new Character('Ivan', 4);
-  expect(math.stoned()).toBe(true);
+  expect(math.stoned).toBe(false);
+});
+
+test('test stoned2', () => {
+  const math = new Character('Ivan', 4);
+  math.stonedStatus = true;
+  expect(math.stoned).toBe(true);
 });
