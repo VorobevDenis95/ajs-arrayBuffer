@@ -1,4 +1,4 @@
-export default class Math {
+export default class Character {
   constructor(name, distance) {
     this.name = name;
     this.attackValue = 10;
@@ -12,7 +12,7 @@ export default class Math {
       if (this.stoned) {
         attack -= Math.log2(this.distance) * 5;
       }
-      return attack;
+      return Math.round(attack);
     });
   }
 

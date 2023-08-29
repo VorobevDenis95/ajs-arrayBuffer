@@ -1,9 +1,9 @@
-import Math from '../js/math';
 import Magician from '../js/magician';
 import Daemon from '../js/daemon';
+import Character from '../js/math';
 
 test('test attack', () => {
-  const math = new Math('Ivan', 3);
+  const math = new Character('Ivan', 3);
   expect(math.attack()).toEqual(8);
 });
 
@@ -30,7 +30,12 @@ test('test attack5', () => {
 });
 
 test('test attack6', () => {
-  const math = new Math('Ivan', 4);
+  const math = new Character('Ivan', 4);
   math.stonedStatus = true;
   expect(math.attack()).toEqual(-3);
+});
+
+test('test stoned', () => {
+  const math = new Character('Ivan', 4);
+  expect(math.stoned()).toBe(true);
 });
